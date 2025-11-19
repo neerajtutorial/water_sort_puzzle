@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Water Sort Puzzle</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Water Sort Puzzle</h1>
+
+    <section class="controls">
+      <label>
+        Level:
+        <select id="levelSelect"></select>
+      </label>
+      <button id="newBtn">New Game</button>
+      <button id="shuffleBtn">Shuffle</button>
+      <button id="undoBtn">Undo</button>
+      <button id="resetBtn">Reset</button>
+      <div class="spacer"></div>
+      <label>
+        Capacity:
+        <input id="capacityInput" type="number" min="3" max="6" value="4" />
+      </label>
+    </section>
+
+    <section id="gameArea" class="game-area"></section>
+
+    <section class="footer">
+      <div id="message" class="message"></div>
+      <small>Click / tap a tube to select source, then click a target to pour.</small>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
